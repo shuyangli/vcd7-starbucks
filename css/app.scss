@@ -1,0 +1,1094 @@
+// Standard configurations
+$font-stack: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$screen-width: 1024px;
+$screen-height: 768px;
+
+// Grid size specification
+$grid-size-full: 64px;
+$grid-size-half: $grid-size-full / 2;
+
+// Color specification
+$color-red: rgb(216, 83, 79);
+
+// Background color specification
+$bg-color-cool-white: rgb(247, 251, 255);
+$bg-color-warm-white: rgb(249, 250, 247);
+$bg-color-light: rgba(235, 238, 242, 0.6);
+$bg-color-dark: rgba(210, 213, 217, 0.6);
+
+// Z-indexes
+$z-idx-app: 100;
+$z-idx-modal: 200;
+
+// Mixins
+@mixin bg-textured-color($color) {
+	// Background color, with pattern overlay
+	background-image: url(../img/bg-pattern.png);
+	background-repeat: repeat;
+	background-color: $color;
+	background-blend-mode: multiply;
+}
+
+@mixin bg-linear-gradient($color-top, $color-bottom) {
+	background-image: linear-gradient(180deg, $color-top, $color-bottom);
+	background-blend-mode: normal;
+}
+
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+// ========================
+//  Actual CSS starts here
+// ========================
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $font-stack;
+	margin: 0;
+	padding: 0;
+
+	height: 100%;
+	width: 100%;
+
+	// Increase letter spacing
+	letter-spacing: 0.5px;
+
+	// Change cursor
+	cursor: default;
+
+	// Disable selection
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+// Bar button: buttons in both order-bar and control-bar
+.bar-button {
+	display: block;
+	width: 100%;
+	height: $grid-size-full;
+
+	padding: 10px;
+	position: absolute;
+
+	// Center text
+	line-height: $grid-size-full - 20px;
+	text-align: center;
+
+	background-color: $bg-color-cool-white;
+}
+
+// Full-justify
+.full-justify {
+	text-align: justify;
+}
+.full-justify:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+.vertical-align-text {
+	@include vertical-align;
+}
+
+#modal-overlay {
+	width: $screen-width;
+	max-width: $screen-width;
+	height: $screen-height;
+	z-index: $z-idx-modal;
+
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+
+	#modal-overlay-background {
+		width: $screen-width;
+		max-width: $screen-width;
+		height: $screen-height;
+		z-index: $z-idx-modal + 1;
+		position: absolute;
+		@include bg-linear-gradient(rgba(152, 152, 152, 0.3), rgba(25, 25, 25, 0.3));
+	}
+
+	#modal-overlay-blocking {
+		width: $screen-width;
+		max-width: $screen-width;
+		height: $screen-height;
+		z-index: $z-idx-modal + 1;
+		position: absolute;
+	}
+
+	.modal-title {
+		height: $grid-size-full;
+		margin: 0 $grid-size-half;
+	}
+
+	$subitem-button-width: $grid-size-half * 5;
+	$subitem-button-height: $grid-size-full;
+
+	#modal-drink {
+		width: $grid-size-half * 23;
+		height: $grid-size-half * 15;
+		z-index: $z-idx-modal + 10;
+
+		background:
+			url(../img/bg-pattern.png) 0 0 repeat,
+			// HACK!
+			linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)),
+			url(../img/bg-blurred.png) (-$grid-size-half*7) (-$grid-size-half) no-repeat;
+		background-blend-mode: multiply, normal, normal;
+
+		position: absolute;
+		left: $grid-size-half * 7;
+		top: $grid-size-half;
+
+		#subitem-brewed-coffee {
+			top: $grid-size-full;
+			left: $grid-size-half;
+		}
+		#subitem-brewed-tea {
+			top: $grid-size-full + $subitem-button-height;
+			left: $grid-size-half;
+		}
+		#subitem-capp {
+			top: $grid-size-full + $subitem-button-height * 2;
+			left: $grid-size-half;
+		}
+		#subitem-macc {
+			top: $grid-size-full + $subitem-button-height * 3;
+			left: $grid-size-half;
+		}
+		#subitem-latte {
+			top: $grid-size-full + $subitem-button-height * 4;
+			left: $grid-size-half;
+		}
+		#subitem-mocha {
+			top: $grid-size-full + $subitem-button-height * 5;
+			left: $grid-size-half;
+		}
+		#subitem-americano {
+			top: $grid-size-full;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#subitem-tea-latte {
+			top: $grid-size-full + $subitem-button-height;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#subitem-capp-flav {
+			top: $grid-size-full + $subitem-button-height * 2;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#subitem-macc-flav {
+			top: $grid-size-full + $subitem-button-height * 3;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#subitem-latte-flav {
+			top: $grid-size-full + $subitem-button-height * 4;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#subitem-mocha-flav {
+			top: $grid-size-full + $subitem-button-height * 5;
+			left: $grid-size-half + $subitem-button-width;
+		}
+
+		#subitem-frap {
+			top: $grid-size-full;
+			left: $grid-size-full + $subitem-button-width * 2;
+		}
+		#subitem-iced-tea {
+			top: $grid-size-full + $subitem-button-height;
+			left: $grid-size-full + $subitem-button-width * 2;
+		}
+		#subitem-refresher {
+			top: $grid-size-full + $subitem-button-height * 2;
+			left: $grid-size-full + $subitem-button-width * 2;
+		}
+		#subitem-frap-esp {
+			top: $grid-size-full;
+			left: $grid-size-full + $subitem-button-width * 3;
+		}
+		#subitem-iced-tea-lemonade {
+			top: $grid-size-full + $subitem-button-height;
+			left: $grid-size-full + $subitem-button-width * 3;
+		}
+		#subitem-smoothie {
+			top: $grid-size-full + $subitem-button-height * 2;
+			left: $grid-size-full + $subitem-button-width * 3;
+		}
+
+		#subitem-apple-juice {
+			top: $grid-size-half * 3 + $subitem-button-height * 3;
+			left: $grid-size-full + $subitem-button-width * 2;
+		}
+		#subitem-choc {
+			top: $grid-size-half * 3 + $subitem-button-height * 4;
+			left: $grid-size-full + $subitem-button-width * 2;
+		}
+		#subitem-eggnog {
+			top: $grid-size-half * 3 + $subitem-button-height * 3;
+			left: $grid-size-full + $subitem-button-width * 3;
+		}
+		#subitem-choc-flav {
+			top: $grid-size-half * 3 + $subitem-button-height * 4;
+			left: $grid-size-full + $subitem-button-width * 3;
+		}
+	}
+
+	#modal-drink-esp {
+		width: $grid-size-half * 12;
+		height: $grid-size-half * 9;
+		z-index: $z-idx-modal + 10;
+
+		background:
+			url(../img/bg-pattern.png) 0 0 repeat,
+			// HACK!
+			linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)),
+			url(../img/bg-blurred.png) (-$grid-size-half*7) (-$grid-size-half) no-repeat;
+		background-blend-mode: multiply, normal, normal;
+
+		position: absolute;
+		left: $grid-size-half * 7;
+		top: $grid-size-half;
+
+		#subitem-solo-esp {
+			top: $grid-size-full;
+			left: $grid-size-half;
+		}
+		#subitem-doppio-esp {
+			top: $grid-size-full;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#subitem-con-panna-esp {
+			top: $grid-size-full + $subitem-button-height;
+			left: $grid-size-half;
+		}
+		#subitem-macchiato-esp {
+			top: $grid-size-full + $subitem-button-height;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#subitem-double-shot-esp {
+			top: $grid-size-full + $subitem-button-height * 2;
+			left: $grid-size-half;
+		}
+	}
+
+	#modal-drink-trenta {
+		width: $grid-size-half * 12;
+		height: $grid-size-half * 9;
+		z-index: $z-idx-modal + 10;
+
+		background:
+			url(../img/bg-pattern.png) 0 0 repeat,
+			// HACK!
+			linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)),
+			url(../img/bg-blurred.png) (-$grid-size-half * 11) (-$grid-size-half * 10) no-repeat;
+		background-blend-mode: multiply, normal, normal;
+
+		position: absolute;
+		left: $grid-size-half * 11;
+		top: $grid-size-half * 10;
+
+		#subitem-frap-trenta {
+			top: $grid-size-full;
+			left: $grid-size-half;
+		}
+		#subitem-frap-esp-trenta {
+			top: $grid-size-full;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#subitem-iced-tea-trenta {
+			top: $grid-size-full + $subitem-button-height;
+			left: $grid-size-half;
+		}
+		#subitem-iced-tea-lemonade-trenta {
+			top: $grid-size-full + $subitem-button-height;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#subitem-iced-coffee-trenta {
+			top: $grid-size-full + $subitem-button-height * 2;
+			left: $grid-size-half;
+		}
+		#subitem-refresher-trenta {
+			top: $grid-size-full + $subitem-button-height * 2;
+			left: $grid-size-half + $subitem-button-width;
+		}
+	}
+
+	#modal-custom-price {
+		width: $grid-size-half * 12;
+		height: $grid-size-half * 16;
+		z-index: $z-idx-modal + 10;
+
+		background:
+			url(../img/bg-pattern.png) 0 0 repeat,
+			// HACK!
+			linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)),
+			url(../img/bg-blurred.png) -512px -256px no-repeat;
+		background-blend-mode: multiply, normal, normal;
+
+		position: absolute;
+		left: $grid-size-full * 8;
+		bottom: 0;
+
+		#item-prompt-custom-cash {
+			position: absolute;
+			width: $subitem-button-width * 2;
+			height: $subitem-button-height;
+			padding: 10px;
+
+			background-color: $bg-color-cool-white;
+
+			top: $grid-size-full;
+			left: $grid-size-half;
+		}
+
+		$numpad-button-width: $grid-size-half * 3 + $grid-size-half / 3;
+		$numpad-button-height: $grid-size-full;
+
+		.numpad-button {
+			position: absolute;
+			width: $numpad-button-width;
+			height: $numpad-button-height;
+			padding: 10px;
+
+			background-color: $bg-color-warm-white;
+		}
+
+		#custom-price-button-1 {
+			top: $grid-size-half * 4;
+			left: $grid-size-half;
+		}
+		#custom-price-button-2 {
+			top: $grid-size-half * 4;
+			left: $grid-size-half + $numpad-button-width;
+		}
+		#custom-price-button-3 {
+			top: $grid-size-half * 4;
+			left: $grid-size-half + $numpad-button-width * 2;
+		}
+		#custom-price-button-4 {
+			top: $grid-size-half * 4 + $numpad-button-height;
+			left: $grid-size-half;
+		}
+		#custom-price-button-5 {
+			top: $grid-size-half * 4 + $numpad-button-height;
+			left: $grid-size-half + $numpad-button-width;
+		}
+		#custom-price-button-6 {
+			top: $grid-size-half * 4 + $numpad-button-height;
+			left: $grid-size-half + $numpad-button-width * 2;
+		}
+		#custom-price-button-7 {
+			top: $grid-size-half * 4 + $numpad-button-height * 2;
+			left: $grid-size-half;
+		}
+		#custom-price-button-8 {
+			top: $grid-size-half * 4 + $numpad-button-height * 2;
+			left: $grid-size-half + $numpad-button-width;
+		}
+		#custom-price-button-9 {
+			top: $grid-size-half * 4 + $numpad-button-height * 2;
+			left: $grid-size-half + $numpad-button-width * 2;
+		}
+		#custom-price-button-backspace {
+			top: $grid-size-half * 4 + $numpad-button-height * 3;
+			left: $grid-size-half;
+		}
+		#custom-price-button-0 {
+			top: $grid-size-half * 4 + $numpad-button-height * 3;
+			left: $grid-size-half + $numpad-button-width;
+		}
+		#custom-price-button-00 {
+			top: $grid-size-half * 4 + $numpad-button-height * 3;
+			left: $grid-size-half + $numpad-button-width * 2;
+		}
+		#item-custom-done-button {
+			bottom: $grid-size-half;
+			left: $grid-size-half + $subitem-button-width;
+		}
+	}
+
+	#modal-starbucks-card {
+		width: $grid-size-half * 17;
+		height: $grid-size-half * 10;
+		z-index: $z-idx-modal + 10;
+
+		background:
+			url(../img/bg-pattern.png) 0 0 repeat,
+			// HACK!
+			linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)),
+			url(../img/bg-blurred.png) -480px -448px no-repeat;
+		background-blend-mode: multiply, normal, normal;
+
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+		#starbucks-card-prompt {
+			position: absolute;
+			width: $grid-size-half * 9;
+			height: $grid-size-half * 7;
+			padding: 10px;
+
+			background-color: $bg-color-cool-white;
+
+			top: $grid-size-full;
+			right: $grid-size-half;
+		}
+		#starbucks-card-activate-button {
+			top: $grid-size-half * 2;
+			left: $grid-size-half;
+		}
+		#starbucks-card-reload-button {
+			top: $grid-size-half * 2 + $subitem-button-height;
+			left: $grid-size-half;
+		}
+		#starbucks-card-deactivate-button {
+			top: $grid-size-half * 3 + $subitem-button-height * 2;
+			left: $grid-size-half;
+			color: $color-red;
+		}
+	}
+	#modal-starbucks-card-reload {
+		width: $grid-size-half * 17;
+		height: $grid-size-half * 10;
+		z-index: $z-idx-modal + 10;
+
+		background:
+			url(../img/bg-pattern.png) 0 0 repeat,
+			// HACK!
+			linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)),
+			url(../img/bg-blurred.png) -480px -448px no-repeat;
+		background-blend-mode: multiply, normal, normal;
+
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+		$reload-button-width: 120px;
+		.subitem-button {
+			width: $reload-button-width;
+		}
+
+		#starbucks-card-prompt {
+			position: absolute;
+			width: $grid-size-half * 9;
+			height: $grid-size-half * 7;
+			padding: 10px;
+
+			background-color: $bg-color-cool-white;
+
+			top: $grid-size-full;
+			right: $grid-size-half;
+		}
+		#starbucks-card-reload-10-button {
+			top: $grid-size-half * 2;
+			left: $grid-size-half;
+		}
+		#starbucks-card-reload-15-button {
+			top: $grid-size-half * 2;
+			left: $grid-size-half + $reload-button-width;
+		}
+		#starbucks-card-reload-20-button {
+			top: $grid-size-half * 2;
+			left: $grid-size-half + $reload-button-width * 2;
+		}
+		#starbucks-card-reload-25-button {
+			top: $grid-size-half * 2;
+			left: $grid-size-half + $reload-button-width * 3;
+		}
+		#starbucks-card-reload-30-button {
+			top: $grid-size-half * 2 + $subitem-button-height;
+			left: $grid-size-half;
+		}
+		#starbucks-card-reload-40-button {
+			top: $grid-size-half * 2 + $subitem-button-height;
+			left: $grid-size-half + $reload-button-width;
+		}
+		#starbucks-card-reload-50-button {
+			top: $grid-size-half * 2 + $subitem-button-height;
+			left: $grid-size-half + $reload-button-width * 2;
+		}
+		#starbucks-card-reload-100-button {
+			top: $grid-size-half * 2 + $subitem-button-height;
+			left: $grid-size-half + $reload-button-width * 3;
+		}
+		#starbucks-card-reload-back-button {
+			top: $grid-size-half * 3 + $subitem-button-height * 2;
+			left: $grid-size-half;
+
+			position: absolute;
+			width: $subitem-button-width;
+			height: $subitem-button-height;
+			padding: 10px;
+
+			background-color: $bg-color-warm-white;
+		}
+	}
+
+	#modal-customization-drink {
+		width: $grid-size-half * 12;
+		height: $grid-size-half * 10;
+		z-index: $z-idx-modal + 10;
+
+		background:
+			url(../img/bg-pattern.png) 0 0 repeat,
+			// HACK!
+			linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)),
+			url(../img/bg-blurred.png) (-$grid-size-half * 11) (-$grid-size-half * 10) no-repeat;
+		background-blend-mode: multiply, normal, normal;
+
+		position: absolute;
+		left: $grid-size-half * 11;
+		top: $grid-size-half * 10;
+
+		#customization-syrup {
+			top: $grid-size-full;
+			left: $grid-size-half;
+		}
+		#customization-esp {
+			top: $grid-size-full;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#customization-soy {
+			top: $grid-size-full + $subitem-button-height;
+			left: $grid-size-half;
+		}
+		#customization-tea-bag {
+			top: $grid-size-full + $subitem-button-height;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#drink-delete {
+			top: $grid-size-half * 3 + $subitem-button-height * 2;
+			left: $grid-size-half;
+			color: $color-red;
+		}
+	}
+
+	#modal-delete-customization {
+		width: $grid-size-half * 7;
+		height: $grid-size-half * 5;
+		z-index: $z-idx-modal + 10;
+
+		background:
+			url(../img/bg-pattern.png) 0 0 repeat,
+			// HACK!
+			linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)),
+			url(../img/bg-blurred.png) (-$grid-size-half * 11) (-$grid-size-half * 10) no-repeat;
+		background-blend-mode: multiply, normal, normal;
+
+		position: absolute;
+		left: $grid-size-half * 11;
+		top: $grid-size-half * 10;
+
+		#customization-delete {
+			top: $grid-size-full;
+			left: $grid-size-half;
+			color: $color-red;
+		}
+	}
+
+	#modal-payment-selection {
+		width: $grid-size-half * 12;
+		height: $grid-size-half * 11;
+		z-index: $z-idx-modal + 10;
+
+		background:
+			url(../img/bg-pattern.png) 0 0 repeat,
+			// HACK!
+			linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)),
+			url(../img/bg-blurred.png) 0 -416px no-repeat;
+		background-blend-mode: multiply, normal, normal;
+
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		#payment-ndid-gift {
+			top: $grid-size-full;
+			left: $grid-size-half;
+		}
+		#payment-credit-debit {
+			top: $grid-size-full + $subitem-button-height;
+			left: $grid-size-half;
+		}
+		#payment-starbucks-card {
+			top: $grid-size-full + $subitem-button-height * 2;
+			left: $grid-size-half;
+		}
+		#payment-applepay {
+			top: $grid-size-full + $subitem-button-height * 3;
+			left: $grid-size-half;
+		}
+		#payment-cash-1 {
+			top: $grid-size-full;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#payment-cash-2 {
+			top: $grid-size-full + $subitem-button-height;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#payment-custom-cash {
+			top: $grid-size-full + $subitem-button-height * 2;
+			left: $grid-size-half + $subitem-button-width;
+		}
+		#payment-other {
+			top: $grid-size-full + $subitem-button-height * 3;
+			left: $grid-size-half + $subitem-button-width;
+		}
+	}
+
+	#modal-payment-wait {
+		width: $grid-size-half * 12;
+		height: $grid-size-half * 11;
+		z-index: $z-idx-modal + 10;
+
+		background:
+			url(../img/bg-pattern.png) 0 0 repeat,
+			// HACK!
+			linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)),
+			url(../img/bg-blurred.png) 0 -416px no-repeat;
+		background-blend-mode: multiply, normal, normal;
+
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		#payment-prompt {
+			position: absolute;
+			width: $subitem-button-width * 2;
+			height: $subitem-button-height * 2 + $grid-size-half;
+			padding: 10px;
+
+			background-color: $bg-color-cool-white;
+
+			top: $grid-size-full;
+			left: $grid-size-half;
+		}
+		#payment-wait-back-button {
+			top: $grid-size-full + $subitem-button-height * 3;
+			left: $grid-size-half;
+		}
+		#payment-wait-done-button {
+			top: $grid-size-full + $subitem-button-height * 3;
+			left: $grid-size-half + $subitem-button-width;
+		}
+	}
+
+	#modal-payment-custom-cash {
+		width: $grid-size-half * 12;
+		height: $grid-size-half * 17;
+		z-index: $z-idx-modal + 10;
+
+		background:
+			url(../img/bg-pattern.png) 0 0 repeat,
+			// HACK!
+			linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)),
+			url(../img/bg-blurred.png) 0 -224px no-repeat;
+		background-blend-mode: multiply, normal, normal;
+
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		#payment-prompt-custom-cash {
+			position: absolute;
+			width: $subitem-button-width * 2;
+			height: $subitem-button-height;
+			padding: 10px;
+
+			background-color: $bg-color-cool-white;
+
+			top: $grid-size-full;
+			left: $grid-size-half;
+		}
+
+		$numpad-button-width: $grid-size-half * 3 + $grid-size-half / 3;
+		$numpad-button-height: $grid-size-full;
+
+		.numpad-button {
+			position: absolute;
+			width: $numpad-button-width;
+			height: $numpad-button-height;
+			padding: 10px;
+
+			background-color: $bg-color-warm-white;
+		}
+
+		#custom-cash-button-1 {
+			top: $grid-size-half * 5;
+			left: $grid-size-half;
+		}
+		#custom-cash-button-2 {
+			top: $grid-size-half * 5;
+			left: $grid-size-half + $numpad-button-width;
+		}
+		#custom-cash-button-3 {
+			top: $grid-size-half * 5;
+			left: $grid-size-half + $numpad-button-width * 2;
+		}
+		#custom-cash-button-4 {
+			top: $grid-size-half * 5 + $numpad-button-height;
+			left: $grid-size-half;
+		}
+		#custom-cash-button-5 {
+			top: $grid-size-half * 5 + $numpad-button-height;
+			left: $grid-size-half + $numpad-button-width;
+		}
+		#custom-cash-button-6 {
+			top: $grid-size-half * 5 + $numpad-button-height;
+			left: $grid-size-half + $numpad-button-width * 2;
+		}
+		#custom-cash-button-7 {
+			top: $grid-size-half * 5 + $numpad-button-height * 2;
+			left: $grid-size-half;
+		}
+		#custom-cash-button-8 {
+			top: $grid-size-half * 5 + $numpad-button-height * 2;
+			left: $grid-size-half + $numpad-button-width;
+		}
+		#custom-cash-button-9 {
+			top: $grid-size-half * 5 + $numpad-button-height * 2;
+			left: $grid-size-half + $numpad-button-width * 2;
+		}
+		#custom-cash-button-backspace {
+			top: $grid-size-half * 5 + $numpad-button-height * 3;
+			left: $grid-size-half;
+		}
+		#custom-cash-button-0 {
+			top: $grid-size-half * 5 + $numpad-button-height * 3;
+			left: $grid-size-half + $numpad-button-width;
+		}
+		#custom-cash-button-00 {
+			top: $grid-size-half * 5 + $numpad-button-height * 3;
+			left: $grid-size-half + $numpad-button-width * 2;
+		}
+
+		#payment-custom-back-button {
+			bottom: $grid-size-half;
+			left: $grid-size-half;
+		}
+		#payment-custom-done-button {
+			bottom: $grid-size-half;
+			left: $grid-size-half + $subitem-button-width;
+		}
+	}
+
+	.subitem-button {
+		position: absolute;
+		width: $subitem-button-width;
+		height: $subitem-button-height;
+		padding: 10px;
+
+		background-color: $bg-color-warm-white;
+
+		.subitem-button-title {
+			@include vertical-align;
+		}
+	}
+
+	.payment-button {
+		position: absolute;
+		width: $subitem-button-width;
+		height: $subitem-button-height;
+		padding: 10px;
+
+		background-color: $bg-color-warm-white;
+
+		.payment-button-title {
+			@include vertical-align;
+		}
+	}
+}
+
+#app-container {
+	width: $screen-width;
+	max-width: $screen-width;
+	height: $screen-height;
+	z-index: $z-idx-app;
+
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+#order-bar, #main-selection, #control-bar {
+	display: inline-block;
+	position: relative;
+	height: 100%;
+
+	// Fix for inline-block gutter
+	margin-right: -4.5px;
+}
+
+#order-bar {
+	top: 0px;
+	width: $grid-size-full * 3 + $grid-size-half;
+
+	@include bg-textured-color($bg-color-dark);
+
+	#clear-button {
+		// Trick to vertically center text
+		height: $grid-size-half;
+		line-height: $grid-size-half - 20px;
+		position: absolute;
+		top: 0;
+
+		color: rgb(255, 255, 255);
+	}
+	.js-clear-button-active {
+		@include bg-linear-gradient(rgb(217, 112, 108), rgb(207, 107, 103));
+	}
+	.js-clear-button-inactive {
+		@include bg-linear-gradient(rgb(217, 217, 217), rgb(207, 207, 207));
+	}
+
+	#order-list {
+		position: absolute;
+		top: $grid-size-half;
+		height: $screen-height - $grid-size-half * 6;
+		width: 100%;
+
+		overflow: scroll;
+
+		.js-item-cell {
+			position: relative;
+			width: $grid-size-half * 7 - 1px;
+			height: $grid-size-full;
+			background-color: $bg-color-cool-white;
+
+			.js-item-name {
+				position: absolute;
+				top: 8px;
+				left: 8px;
+				max-width: $grid-size-half * 7 - 17px;
+				float: left;
+			}
+			.js-item-price {
+				position: absolute;
+				bottom: 8px;
+				right: 8px;
+				float: right;
+			}
+		}
+		.js-customization-cell {
+			width: $grid-size-half * 6 - 1px;
+			height: $grid-size-half;
+			padding: 0 8px;
+			margin-left: $grid-size-half;
+			background-color: $bg-color-cool-white;
+
+			.js-item-name {
+				max-width: $grid-size-half * 6 - 17px;
+				float: left;
+			}
+			.js-item-price {
+				float: right;
+			}
+		}
+	}
+
+	#no-item-prompt {
+		color: rgb(64, 64, 64);
+		text-align: center;
+	}
+
+	#tax-display {
+		height: $grid-size-half;
+		line-height: $grid-size-half - 20px;
+		position: absolute;
+		bottom: $grid-size-full * 2;
+	}
+
+	#charge-button {
+		// Trick to vertically center text
+		height: $grid-size-full * 2;
+		line-height: $grid-size-full * 2 - 20px;
+
+		position: absolute;
+		bottom: 0;
+	}
+	.js-charge-button-active {
+		color: rgb(255, 255, 255);
+		@include bg-linear-gradient(rgb(82, 191, 82), rgb(71, 164, 71));
+	}
+	.js-charge-button-inactive {
+		color: rgb(255, 255, 255);
+		@include bg-linear-gradient(rgb(191, 191, 191), rgb(155, 155, 155));
+	}
+}
+
+#main-selection {
+	width: $screen-width - $grid-size-full * 6 - $grid-size-half;
+	@include bg-textured-color($bg-color-light);
+
+	$item-button-width: $grid-size-full * 2;
+	$item-button-height: $grid-size-full * 2 + $grid-size-half;
+
+	.item-button {
+		position: absolute;
+		width: $item-button-width;
+		height: $item-button-height;
+
+		padding: 10px;
+
+		background-color: $bg-color-cool-white;
+
+		img {
+			width: 100%;
+			height: $grid-size-full * 2 - 10px * 2;
+
+			// Desaturate the image
+			filter: saturate(60%);
+			-webkit-filter: saturate(60%);
+		}
+
+		.item-button-label {
+			position: relative;
+			width: 100%;
+			top: 4px;
+			bottom: 0;
+		}
+	}
+
+	.special-button {
+		position: absolute;
+		width: $item-button-width;
+		height: $grid-size-full + $grid-size-half;
+
+		padding: 10px;
+		background-color: $bg-color-warm-white;
+	}
+
+	// Laying out specific buttons
+	#espresso-button {
+		top: $grid-size-half;
+		left: $grid-size-half;
+	}
+	#short-button {
+		top: $grid-size-half;
+		left: $grid-size-half + $item-button-width;
+	}
+	#tall-button {
+		top: $grid-size-half + $item-button-height;
+		left: $grid-size-half;
+	}
+	#grande-button {
+		top: $grid-size-half + $item-button-height;
+		left: $grid-size-half + $item-button-width;
+	}
+	#venti-button {
+		top: $grid-size-half + $item-button-height * 2;
+		left: $grid-size-half;
+	}
+	#trenta-button {
+		top: $grid-size-half + $item-button-height * 2;
+		left: $grid-size-half + $item-button-width;
+	}
+	#bottled-button {
+		top: $grid-size-half * 2 + $item-button-height * 3;
+		left: $grid-size-half;
+	}
+
+	#mug-button {
+		top: $grid-size-half;
+		left: $grid-size-half * 2 + $item-button-width * 2;
+	}
+	#food-button {
+		top: $grid-size-half;
+		left: $grid-size-half * 2 + $item-button-width * 3;
+	}
+	#snack-button {
+		top: $grid-size-half + $item-button-height;
+		left: $grid-size-half * 2 + $item-button-width * 2;
+	}
+	#whole-bean-button {
+		top: $grid-size-half + $item-button-height;
+		left: $grid-size-half * 2 + $item-button-width * 3;
+	}
+	#custom-button {
+		top: $grid-size-half + $item-button-height * 2;
+		left: $grid-size-half * 2 + $item-button-width * 2;
+	}
+
+	#starbucks-card-button {
+		bottom: $grid-size-full;
+		right: $grid-size-half + $item-button-width;
+	}
+	#promo-code-button {
+		bottom: $grid-size-full;
+		right: $grid-size-half;
+	}
+}
+
+#control-bar {
+	width: $grid-size-full * 3;
+	@include bg-textured-color($bg-color-dark);
+
+	#info-box {
+		height: $grid-size-full * 3;
+		padding: $grid-size-half / 2 * 1.5;
+		color: rgb(64, 64, 64);
+
+		position: absolute;
+		top: 0;
+	}
+
+	#bulk-button {
+		bottom: $grid-size-full * 5;
+	}
+
+	#drawer-button {
+		bottom: $grid-size-full * 3 + $grid-size-half;
+	}
+
+	#reprint-button {
+		bottom: $grid-size-full * 2 + $grid-size-half;
+	}
+
+	#manager-button {
+		bottom: $grid-size-full * 1 + $grid-size-half;
+	}
+
+	#signout-button {
+		bottom: 0;
+		color: $color-red;
+	}
+}
+
+// ============
+//  1px Shades
+// ============
+
+$shade-color: rgba(198, 201, 204, 0.8);
+
+.shade-bottom {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: $shade-color;
+}
+
+.shade-left {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: $shade-color;
+}
+
+.shade-right {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: $shade-color;
+}

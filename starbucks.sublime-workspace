@@ -1,0 +1,1444 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"starbucks",
+				"starbucks-card-prompt"
+			],
+			[
+				"colo",
+				"color-red"
+			],
+			[
+				"grid-si",
+				"grid-size-half"
+			],
+			[
+				"addItem",
+				"addItem"
+			],
+			[
+				"pri",
+				"priceAmount"
+			],
+			[
+				"order",
+				"order-list"
+			],
+			[
+				"anim",
+				"animate	.animate()"
+			],
+			[
+				"payment",
+				"payment-prompt"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"my",
+				"myToFixed"
+			],
+			[
+				"num",
+				"numpad-button-height"
+			],
+			[
+				"grid-size",
+				"grid-size-full"
+			],
+			[
+				"numpad",
+				"numpad-button-width"
+			],
+			[
+				"bg-co",
+				"bg-color-warm-white"
+			],
+			[
+				"gr",
+				"grid-size-full"
+			],
+			[
+				"grid",
+				"grid-size-full"
+			],
+			[
+				"grid-siz",
+				"grid-size-full"
+			],
+			[
+				"resetOrder",
+				"resetOrderBarStatus"
+			],
+			[
+				"casha",
+				"cashAmountOne"
+			],
+			[
+				"next",
+				"nextToCurrentCashUnit"
+			],
+			[
+				"purchase",
+				"purchasedItems"
+			],
+			[
+				"subitem-",
+				"subitem-button-height"
+			],
+			[
+				"getD",
+				"getItemDescription"
+			],
+			[
+				"purc",
+				"purchasedItems"
+			],
+			[
+				"currentIte",
+				"currentItemIndex"
+			],
+			[
+				"pur",
+				"purchasedItems"
+			],
+			[
+				"currentCust",
+				"currentCustomizationIndex"
+			],
+			[
+				"purchased",
+				"purchasedItems"
+			],
+			[
+				"current",
+				"currentCustomizationPrice"
+			],
+			[
+				"currentCustomi",
+				"currentCustomizationName"
+			],
+			[
+				"addCustom",
+				"addCustomizationIntoOrderList"
+			],
+			[
+				"cur",
+				"currentCustomizationName"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"gir",
+				"grid-size-full"
+			],
+			[
+				"grid-s",
+				"grid-size-full"
+			],
+			[
+				"vert",
+				"vertical-align"
+			],
+			[
+				"scr",
+				"scroll"
+			],
+			[
+				"displayCharge",
+				"displayChargeChooseItem"
+			],
+			[
+				"tax",
+				"taxPrice"
+			],
+			[
+				"cure",
+				"currentSession"
+			],
+			[
+				"total",
+				"totalPrice"
+			],
+			[
+				"curre",
+				"currentSession"
+			],
+			[
+				"disp",
+				"displayTotal"
+			],
+			[
+				"new",
+				"newTax"
+			],
+			[
+				"item",
+				"itemCustomization"
+			],
+			[
+				"modal-ov",
+				"modal-overlay"
+			],
+			[
+				"modal-over",
+				"modal-overlay-background"
+			],
+			[
+				"z-idx",
+				"z-idx-modal"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"subi",
+				"subitem-button-height"
+			],
+			[
+				"subitem",
+				"subitem-button-width"
+			],
+			[
+				"gri",
+				"grid-size-half"
+			],
+			[
+				"verti",
+				"vertical-align-text"
+			],
+			[
+				"background",
+				"background-blend-mode"
+			],
+			[
+				"z-d",
+				"z-idx-modal"
+			],
+			[
+				"display",
+				"displayInfobox"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"bg-c",
+				"bg-color-warm-white"
+			],
+			[
+				"grid-",
+				"grid-size-half"
+			],
+			[
+				"g",
+				"grid-size-half"
+			],
+			[
+				"gi",
+				"grid-size-full"
+			],
+			[
+				"bg-col",
+				"bg-color-dark"
+			],
+			[
+				"bg",
+				"bg	background"
+			],
+			[
+				"back",
+				"background-color-light"
+			],
+			[
+				"backgr",
+				"background-blend-mode"
+			],
+			[
+				"bar-but",
+				"bar-button-justify"
+			],
+			[
+				"backgroun",
+				"background-image"
+			],
+			[
+				"shad",
+				"shade-color"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"sc",
+				"screen-height"
+			],
+			[
+				"scre",
+				"screen-width"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"cac",
+				"cachedMouseY"
+			],
+			[
+				"cache",
+				"cachedMouseX"
+			],
+			[
+				"pa",
+				"pageY"
+			],
+			[
+				"cached",
+				"cachedMouseY"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"boxCenter",
+				"boxCenterX"
+			],
+			[
+				"boxN",
+				"boxNumVertical"
+			],
+			[
+				"font",
+				"font-stack"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"print",
+				"print_raw_double_binary"
+			],
+			[
+				"print_raw",
+				"print_raw_double_binary"
+			],
+			[
+				"be",
+				"begin"
+			],
+			[
+				"coun",
+				"count1"
+			],
+			[
+				"count",
+				"counter2"
+			],
+			[
+				"file",
+				"file2"
+			],
+			[
+				"temp",
+				"template"
+			],
+			[
+				"right",
+				"rightChild"
+			],
+			[
+				"leftC",
+				"leftChild"
+			],
+			[
+				"rightC",
+				"rightChildValue"
+			],
+			[
+				"leftc",
+				"leftChild"
+			],
+			[
+				"bubble",
+				"bubbleUp"
+			],
+			[
+				"foun",
+				"foundNode"
+			],
+			[
+				"recursive",
+				"recursiveSearchForKey"
+			],
+			[
+				"parent",
+				"parentNode"
+			],
+			[
+				"insert",
+				"insertionNode"
+			],
+			[
+				"insr",
+				"insertionNode"
+			],
+			[
+				"fitnes",
+				"fitness_result"
+			],
+			[
+				"snapshot",
+				"snapshot_nutrition_goal_query"
+			],
+			[
+				"food",
+				"fooddata"
+			],
+			[
+				"reload",
+				"reloadStoredFoodAJAX"
+			],
+			[
+				"redraw",
+				"redraw_meal_id"
+			],
+			[
+				"meal",
+				"mealDay"
+			],
+			[
+				"user",
+				"userdata"
+			],
+			[
+				"und",
+				"underflow"
+			],
+			[
+				"pop",
+				"pop_front"
+			],
+			[
+				"list",
+				"list_node"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Upload",
+	"command_palette":
+	{
+		"height": 339.0,
+		"selected_items":
+		[
+			[
+				"gitdiff",
+				"Git: Diff Current File"
+			],
+			[
+				"packagelist",
+				"Package Control: List Packages"
+			],
+			[
+				"gitstat",
+				"Git: Status"
+			],
+			[
+				"projs",
+				"Project: Save As"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"removepa",
+				"Package Control: Remove Package"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"ssmark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"project",
+				"Project: Add Folder"
+			],
+			[
+				"projec",
+				"Project: Save As"
+			],
+			[
+				"gitcommit",
+				"Git: Commit"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"vintageous",
+				"Vintageous: Reset"
+			],
+			[
+				"vintage",
+				"Set Syntax: Vintageous Command Line"
+			],
+			[
+				"ssc++",
+				"Set Syntax: C++"
+			],
+			[
+				"ssobjec",
+				"Set Syntax: Objective-C"
+			],
+			[
+				"ssc",
+				"Set Syntax: C"
+			],
+			[
+				"insatl",
+				"Package Control: Install Package"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"origami",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"oridest",
+				"Origami: Destroy Pane on the Right"
+			],
+			[
+				"origamideri",
+				"Origami: Destroy Pane on the Right"
+			],
+			[
+				"packageinst",
+				"Package Control: Install Package"
+			],
+			[
+				"markpre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prevew",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markprev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"ssmarkd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"packinstla",
+				"Package Control: Install Package"
+			],
+			[
+				"ssplaint",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"ssjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"ssmarkdowngfm",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"markdprev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markpreview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdownpreview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add Current File"
+			],
+			[
+				"removepack",
+				"Package Control: Remove Package"
+			],
+			[
+				"packremove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packageremove",
+				"Package Control: Remove Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Previous Error"
+			],
+			[
+				"packageinstal",
+				"Package Control: Install Package"
+			],
+			[
+				"instalal",
+				"Package Control: Install Package"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"packins",
+				"Package Control: Install Package"
+			],
+			[
+				"insatll",
+				"Package Control: Install Package"
+			],
+			[
+				"ssmarkdown",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"expand",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"warp",
+				"Word Wrap: Toggle"
+			],
+			[
+				"next",
+				"Emmet: Next Edit Point"
+			],
+			[
+				"octave",
+				"Snippet: Octave function"
+			],
+			[
+				"octav",
+				"Snippet: Octave function"
+			],
+			[
+				"matlab",
+				"Set Syntax: MATLAB"
+			],
+			[
+				"expan",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"sssql",
+				"Set Syntax: SQL"
+			],
+			[
+				"expa",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"sstext",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"sssas",
+				"Set Syntax: Sass"
+			],
+			[
+				"sssass",
+				"Set Syntax: Sass"
+			],
+			[
+				"packageinstall",
+				"Package Control: Install Package"
+			],
+			[
+				"sscss",
+				"Set Syntax: CSS"
+			],
+			[
+				"ssphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ssjava",
+				"Set Syntax: Java"
+			],
+			[
+				"ssruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"sspython",
+				"Set Syntax: Python"
+			],
+			[
+				"ssmarkdow",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"packainsta",
+				"Package Control: Install Package"
+			],
+			[
+				"ssmarkdon",
+				"Set Syntax: Markdown"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packaginstall",
+				"Package Control: Install Package"
+			],
+			[
+				"packageinsta",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 471.0
+	},
+	"console":
+	{
+		"height": 293.0,
+		"history":
+		[
+			"print(\"Hello\")",
+			"dir(math)",
+			"print math.pi;",
+			"print math.pi",
+			"math.pi",
+			"import math",
+			"print math.pi",
+			"clear",
+			"\"Hello\"",
+			"1",
+			"print 1",
+			"puts \"Hello\"",
+			"print \"Hello\"",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks",
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks/css",
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks/js"
+	],
+	"file_history":
+	[
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks/js/app.js",
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks/css/app.scss",
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks/index.html",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks/.gitignore",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/ProfilePage.js",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/Profile Page.css",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/reloadprofilepage.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Unstyled/reloadprofilepage.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/Register.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Unstyled/FoodPage.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/home_button.svg",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Unstyled/masonry.pkgd.min.js",
+		"/Users/shuyangli/Developer/icensa/Fitspace/TODO",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Unstyled/ProfilePage.js",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/ProfilePage.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Proposed Schema.markdown",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/LandingPage.html",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/LandingPage.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Fitspace.sublime-project",
+		"/Users/shuyangli/Developer/icensa/Fitspace/upload.exp",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/FoodPage.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Unstyled/FoodPage.js",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/getfoodvalues.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Credentials.html",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/LandingPage.css",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/UpdatePasswordAndName.php",
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks/Makefile",
+		"/Users/shuyangli/Dropbox/Support/Sublime/User/.vintageousrc",
+		"/Users/shuyangli/Developer/cocos2d-x/cocos/base/CCDirector.h",
+		"/Users/shuyangli/Developer/cocos2d-x/cocos/base/CCDirector.cpp",
+		"/Users/shuyangli/Desktop/test.c",
+		"/Users/shuyangli/Dropbox/Support/Sublime/User/MarkdownPreviewCustom.css",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Packages/User/Markdown (Standard).sublime-settings",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/CSE 30331/Assignments/Prog2/README",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Packages/User/MarkdownPreview.sublime-settings",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Installed Packages/Theme - Spacegray.sublime-package",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks/js/item-prices.json",
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks/css/foundation.min.css",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/shuyangli/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/README.md",
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks/css/app.css",
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks/js/vendor/jquery.js",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/DESN 31141/4 Initial Concept Presentation/Exports/2-3-Select-Drink.png",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/groups.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/GetRecentActivity.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/CreateFitnessGoal.php",
+		"/Users/shuyangli/Developer/shuyangli.github.io/index.html",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/queryFriends.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/db_connect.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/db_config_login.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/UpdateGoalsDaily.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/SnapshotUserGoals.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/processnotif.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/GetEventDetails.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/GetEvents.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/Library.css",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/y",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/trial.php",
+		"/Users/shuyangli/Developer/shuyangli.github.io/js/main.js",
+		"/Users/shuyangli/Developer/shuyangli.github.io/css/main.css",
+		"/Users/shuyangli/.bash_profile",
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks/css/normalize.css",
+		"/Users/shuyangli/Developer/shuyangli.github.io/project/vcd7-starbucks/css/foundation.css",
+		"/Users/shuyangli/Developer/class/cse20211/Makefile",
+		"/Users/shuyangli/test.c",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/Archive/CSE 20211/Code/lab6/othello.c",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/Archive/CSE 20211/Code/lab6/computer.c",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/Archive/CSE 20211/Code/lab4/carnival.c",
+		"/Users/shuyangli/Developer/class/cse40647/project/walmart.json",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/CSE 30246/Assignments/cse30246_hw3_sli8.sql",
+		"/Users/shuyangli/Developer/test.c",
+		"/Users/shuyangli/Developer/blog/_config.yml",
+		"/Users/shuyangli/Developer/blog/_layouts/default.html",
+		"/Users/shuyangli/Developer/blog/_includes/footer.html",
+		"/Users/shuyangli/Developer/blog/_layouts/post.html",
+		"/Users/shuyangli/Developer/shuyangli.github.io/js/tracking.js",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/CSE 30246/Assignments/Homework 3 Hints.txt",
+		"/Users/shuyangli/.bashrc",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/CSE 30246/Assignments/Homework 3 Hints.markdown",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/Archive/CSE 20211/Code/lab3/bounce.c",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/Archive/CSE 20211/Code/lab3/rotate.c",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/Archive/CSE 20211/Code/lab3/symbol.c",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/Archive/CSE 20211/Code/lab8/synth.c",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/Archive/CSE 20211/Code/lab8/wavfile.h",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/Archive/CSE 20211/Code/lab8/wavfile.c",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/Archive/CSE 20211/Code/lab8/piano.c",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/Archive/CSE 20211/Code/lab9/crossword.c",
+		"/Users/shuyangli/Developer/class/TheIronBank/test.txt",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/CSE 30331/Assignments/Prog2/topwords.cxx",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/CSE 30331/Assignments/Prog2/cosine.cxx",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/CSE 30331/Assignments/Prog2/map.h",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/CSE 30331/Assignments/Prog2/queue.h",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/CSE 30331/Assignments/Prog2/Makefile",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/CSE 30331/Assignments/Prog2/test_prog2.sh",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/CSE 30331/Assignments/Prog2/test_prog2.cxx",
+		"/Users/shuyangli/Dropbox/Notre Dame Class Files/CSE 30331/Assignments/Prog2/test_prog2",
+		"/Users/shuyangli/Developer/class/TheIronBank/index.html",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/TrackFitnessGoals.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/CreateNutritionalGoal.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/searchfood.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Unstyled/SnapshotUserGoals.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Unstyled/db_connect.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Unstyled/database.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/add_snapshots.sql",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/UpdateGoalUI.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/UpdateAllGoalUI.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Unstyled/jquery.grid-a-licious.min.js",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Unstyled/idle-timer.min.js",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/GetUserProfileInformation.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Credentials.markdown",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/CheckRssLink.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/GetAllNewsfeedItems.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/ProfilePage.css",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/useractivitysave.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/generateplot.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/UpdateNutritionGoals.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/populateevents.php",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/LoginPage.html",
+		"/Users/shuyangli/Developer/icensa/Fitspace/Styled/GetNewsfeedItems.php"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"Fitspace",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"50",
+			"subitem-button-width",
+			"20",
+			"15",
+			"20",
+			"15",
+			"216",
+			"priceAmount",
+			"Cash",
+			"cash",
+			"5",
+			"payment",
+			"cash",
+			"viewmessagepopup",
+			"notifscroller",
+			"message",
+			"$temp",
+			"$temp[1]",
+			"mynotifs",
+			"notifscroller",
+			"viewmessagepopup",
+			"notifscroller",
+			".item",
+			"notifscroller",
+			"#notification",
+			"mealda",
+			"alert",
+			"hide",
+			"resetmodal",
+			"hide\\(\\)",
+			"fadeIn\\(250\\)",
+			"fadeIn\\(\\)",
+			".show\\(\\)",
+			"font-famil",
+			"setting",
+			"lookUpPrice",
+			"item",
+			"custom-cash-numpad-button",
+			"$(\"#custom-cash\")",
+			"configureChargeModal",
+			"\\[0\\]",
+			"<div class=\"payment-button shade-bottom shade-right\"",
+			"<div class=\"payment-button shade-bottom shade-right\" id=\"payment-ndid-gift\">",
+			"payment",
+			"div class=\"payment-button shade-bottom shade-right\" id=\"payment-starbucks-card\"",
+			"starbucks",
+			"div class=\"payment-button shade-bottom shade-right\" id=\"payment-starbucks-card\"",
+			"subitem-button",
+			"currentCustomizationIndex",
+			"extend\\([^t]",
+			"drink",
+			"#drink-delete",
+			"([a-zA-Z]*)\\.toFixed\\((.)\\)",
+			"toFixed\\((.)\\)",
+			"itemIndex",
+			"customization-button",
+			"subitem-button",
+			"drink",
+			"itemPriceData",
+			": ....",
+			"drinkPrices",
+			"drinkPrice",
+			"300",
+			"function \\(e\\)",
+			"click",
+			"clearCurrentSession",
+			"dummySession",
+			"resetOrderButtonStatus",
+			"displayChargeChooseItem",
+			"displayChooseItem",
+			"charge",
+			"newTotalCost",
+			"currentDrinkSize",
+			"(class=\"subitem-button shade-bottom shade-right\")",
+			"img-button",
+			"item-button",
+			"replacement",
+			"\\.png",
+			"shacks",
+			"fake-pic",
+			".bar-button",
+			"img",
+			"Tall",
+			"span",
+			"email",
+			",",
+			"shade-right",
+			"rgba(198, 201, 204, 0.6);",
+			"bottom",
+			"tabs-2",
+			"2",
+			"h1",
+			"canvas",
+			"font-align",
+			"sm",
+			"parse",
+			",",
+			"halfDiagonalDist",
+			"centerColor",
+			"0",
+			"boxHeight",
+			"boxWidth",
+			"Parse",
+			"    ",
+			"   ",
+			")\n",
+			"unsigned long long",
+			"double",
+			"xcc",
+			"'.*','(.*)'\\n",
+			"(.*)\\n",
+			"\\|.*\\| (.*) \\|",
+			"level",
+			"swap",
+			"counter2",
+			"counter1",
+			"binary_node<key_value>",
+			"  ",
+			"auto",
+			"\\[",
+			"  ",
+			"Postcondition",
+			"	",
+			"UpdateGoalsDaily",
+			"activity-form",
+			"TimeStamp",
+			"CreatedDate",
+			"\");\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"fadeOut(200)",
+			"fadeIn(200)",
+			"fadeIn(250)",
+			".fadeIn()",
+			"js-custom-cash-numpad-button",
+			"myToFixed($1, $2)",
+			"myToFixed($1)",
+			": 1.00",
+			"value=\"drink\" $1",
+			"img-button",
+			"@2x.png",
+			"\\n",
+			"unsigned long",
+			"float",
+			"$1, ",
+			"$1",
+			"    ",
+			"     ",
+			"        ",
+			"    ",
+			"\\t",
+			";",
+			"",
+			"%3A",
+			"%2F",
+			"+",
+			"\\n$1",
+			"\\n\\n\\n",
+			"</tr>\\n\\n\\n",
+			"\\n\\n\\n",
+			"",
+			",\\n\\n\\n",
+			"&",
+			"\\n",
+			",\\n",
+			"\\n\\t",
+			"\\n",
+			"\"",
+			">",
+			"",
+			"\\n",
+			"\\t",
+			">",
+			"",
+			">",
+			"<a>",
+			"",
+			"$1#",
+			"$1",
+			";",
+			" = ",
+			"",
+			"<key>$2</key>\\n<string>$1</string>",
+			"\\n",
+			"",
+			"iona",
+			"",
+			"NSString * const kCSHCourseAttribute$1 = $2;",
+			"",
+			"$2 :: @$1",
+			"BusinessAdministration",
+			"NSString * const kCSHCourseSubject$2 = @$1;",
+			"Studies",
+			"Stu",
+			"",
+			"SMC",
+			"$1;",
+			"NSString * const $1",
+			"",
+			"$1 =",
+			"Program",
+			"$1",
+			"kCSHCourseCampus",
+			"$2$1=$3",
+			"$2$1",
+			"&",
+			" kCSHCourseCampus",
+			"$2 = @$1",
+			"$2:$1",
+			"",
+			"</tr>\\n",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.421952351485,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 203.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 110.0
+	},
+	"output.markdown":
+	{
+		"height": 110.0
+	},
+	"project": "starbucks.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"processnotif",
+				"Styled/processnotif.php"
+			],
+			[
+				"reloadprofilepage",
+				"Unstyled/reloadprofilepage.php"
+			],
+			[
+				"profilepage.js",
+				"Unstyled/ProfilePage.js"
+			],
+			[
+				"landing",
+				"Styled/LandingPage.php"
+			],
+			[
+				"foodpage.php",
+				"Unstyled/FoodPage.php"
+			],
+			[
+				"foodpage",
+				"Unstyled/FoodPage.js"
+			],
+			[
+				"app.sc",
+				"css/app.scss"
+			],
+			[
+				"app.js",
+				"js/app.js"
+			],
+			[
+				"food",
+				"Styled/getfoodvalues.php"
+			],
+			[
+				"group",
+				"Styled/groups.php"
+			],
+			[
+				"queryf",
+				"Styled/queryFriends.php"
+			],
+			[
+				"queryfri",
+				"Styled/queryFriends.php"
+			],
+			[
+				"db_connect",
+				"Styled/db_connect.php"
+			],
+			[
+				"queryfrie",
+				"Styled/queryFriends.php"
+			],
+			[
+				"styled/profilepage.php",
+				"Styled/ProfilePage.php"
+			],
+			[
+				"profilepage.php",
+				"Styled/ProfilePage.php"
+			],
+			[
+				"snapshot",
+				"Styled/SnapshotUserGoals.php"
+			],
+			[
+				"daily",
+				"Styled/UpdateGoalsDaily.php"
+			],
+			[
+				"landingp",
+				"Styled/LandingPage.php"
+			],
+			[
+				"updateallgoal",
+				"Styled/UpdateAllGoalUI.php"
+			],
+			[
+				"updategoalui",
+				"Styled/UpdateGoalUI.php"
+			],
+			[
+				"create",
+				"Styled/CreateNutritionalGoal.php"
+			],
+			[
+				"landingpage",
+				"Styled/LandingPage.php"
+			],
+			[
+				"goal",
+				"Styled/CreateFitnessGoal.php"
+			],
+			[
+				"landingpage.php",
+				"Styled/LandingPage.php"
+			],
+			[
+				"getfoodv",
+				"Styled/getfoodvalues.php"
+			],
+			[
+				"nutri",
+				"Styled/UpdateNutritionGoals.php"
+			],
+			[
+				"fitness",
+				"Styled/TrackFitnessGoals.php"
+			],
+			[
+				"upda",
+				"Styled/UpdateGoalsDaily.php"
+			],
+			[
+				"db_config",
+				"Styled/db_config_login.php"
+			],
+			[
+				"dbconn",
+				"Unstyled/db_connect.php"
+			],
+			[
+				"dbcon",
+				"Styled/db_connect.php"
+			],
+			[
+				"projs",
+				"Unstyled/ProfilePage.js"
+			],
+			[
+				"profijs",
+				"Styled/ProfilePage.js"
+			],
+			[
+				"searchfood",
+				"Styled/searchfood.php"
+			],
+			[
+				"foodpa",
+				"Unstyled/FoodPage.js"
+			],
+			[
+				"profilepage",
+				"Styled/ProfilePage.php"
+			],
+			[
+				"foodvalue",
+				"Styled/getfoodvalues.php"
+			],
+			[
+				"la",
+				"Styled/LandingPage.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 201.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,135 @@
+{
+	"drink" : {
+		"Espresso" : {
+			"Solo" : 1.75,
+			"Doppio" : 1.95,
+			"Con Panna" : 1.85,
+			"Macchiato" : 1.85,
+			"Starbucks Double Shot" : 2.55
+		},
+
+		"Short" : {
+			"Brewed Coffee" : 1.65,
+			"Caffè Americano" : 1.95,
+			"Brewed Tea" : 1.85,
+			"Tea Latte" : 3.05,
+			"Cappuccino" : 2.85,
+			"Flavored Cappuccino" : 3.35,
+			"Caramel Macchiato" : 3.65,
+			"Flavored Macchiato" : 3.95,
+			"Caffè Latte" : 2.85,
+			"Flavored Latte" : 3.35,
+			"Caffè Mocha" : 3.35,
+			"Flavored Mocha" : 3.75,
+			"Frappuccino" : 2.75,
+			"Espresso Frappuccino" : 3.50,
+			"Shaken Iced Tea" : 1.30,
+			"Shaken Iced Tea Lemonade" : 2.35,
+			"Starbucks Refresher" : 2.45,
+			"Starbucks Smoothie" : 4.25,
+			"Apple Juice" : 2.15,
+			"Eggnog Latte" : 3.55,
+			"Hot Chocolate" : 2.65,
+			"Flavored Hot Chocolate" : 2.85
+		},
+
+		"Tall" : {
+			"Brewed Coffee" : 1.75,
+			"Caffè Americano" : 2.15,
+			"Brewed Tea" : 1.95,
+			"Tea Latte" : 3.15,
+			"Cappuccino" : 2.95,
+			"Flavored Cappuccino" : 3.45,
+			"Caramel Macchiato" : 3.75,
+			"Flavored Macchiato" : 4.05,
+			"Caffè Latte" : 2.95,
+			"Flavored Latte" : 3.45,
+			"Caffè Mocha" : 3.45,
+			"Flavored Mocha" : 3.95,
+			"Frappuccino" : 2.95,
+			"Espresso Frappuccino" : 3.70,
+			"Shaken Iced Tea" : 1.50,
+			"Shaken Iced Tea Lemonade" : 2.55,
+			"Starbucks Refresher" : 2.95,
+			"Starbucks Smoothie" : 4.25,
+			"Apple Juice" : 2.25,
+			"Eggnog Latte" : 3.75,
+			"Hot Chocolate" : 2.75,
+			"Flavored Hot Chocolate" : 2.95
+		},
+
+		"Grande" : {
+			"Brewed Coffee" : 1.95,
+			"Caffè Americano" : 2.55,
+			"Brewed Tea" : 2.15,
+			"Tea Latte" : 3.65,
+			"Cappuccino" : 3.65,
+			"Flavored Cappuccino" : 4.15,
+			"Caramel Macchiato" : 4.45,
+			"Flavored Macchiato" : 4.75,
+			"Caffè Latte" : 3.65,
+			"Flavored Latte" : 4.15,
+			"Caffè Mocha" : 4.15,
+			"Flavored Mocha" : 4.65,
+			"Frappuccino" : 3.75,
+			"Espresso Frappuccino" : 4.50,
+			"Shaken Iced Tea" : 2.15,
+			"Shaken Iced Tea Lemonade" : 2.95,
+			"Starbucks Refresher" : 3.65,
+			"Starbucks Smoothie" : 4.25,
+			"Apple Juice" : 2.45,
+			"Eggnog Latte" : 4.25,
+			"Hot Chocolate" : 3.25,
+			"Flavored Hot Chocolate" : 3.45
+		},
+
+		"Venti" : {
+			"Brewed Coffee" : 2.25,
+			"Caffè Americano" : 2.95,
+			"Brewed Tea" : 2.45,
+			"Tea Latte" : 3.95,
+			"Cappuccino" : 3.95,
+			"Flavored Cappuccino" : 4.45,
+			"Caramel Macchiato" : 4.75,
+			"Flavored Macchiato" : 5.05,
+			"Caffè Latte" : 3.95,
+			"Flavored Latte" : 4.45,
+			"Caffè Mocha" : 4.45,
+			"Flavored Mocha" : 4.75,
+			"Frappuccino" : 4.25,
+			"Espresso Frappuccino" : 5.00,
+			"Shaken Iced Tea" : 2.65,
+			"Shaken Iced Tea Lemonade" : 3.55,
+			"Starbucks Refresher" : 4.15,
+			"Starbucks Smoothie" : 4.25,
+			"Apple Juice" :2.75,
+			"Eggnog Latte" : 4.75,
+			"Hot Chocolate" : 3.45,
+			"Flavored Hot Chocolate" : 3.65
+		},
+
+		"Trenta" : {
+			"Iced Coffee" : 3.45,
+			"Frappuccino" : 4.65,
+			"Espresso Frappuccino" : 5.40,
+			"Shaken Iced Tea" : 2.95,
+			"Shaken Iced Tea Lemonade" : 3.95,
+			"Starbucks Refresher" : 4.45
+		},
+
+		"Bottled" : {
+
+		}
+	},
+
+	"customization" : {
+		"Add Syrup" : 0.50,
+		"Add Espresso" : 0.50,
+		"Sub Soy Milk" : 0.60,
+		"Add Tea Bag" : 0.50
+	},
+
+	"item" : {
+
+	}
+}

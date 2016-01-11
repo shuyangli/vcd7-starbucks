@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<title>Register Redesign | Starbucks × Shuyang</title>
+
+	<link rel="stylesheet" href="css/app.css" />
+
+	<script type="text/javascript" src="js/vendor/jquery.js"></script>
+	<script type='application/javascript' src="js/vendor/fastclick.js"></script>
+	<script type='application/javascript' src="js/app.js"></script>
+</head>
+
+<body>
+	<!-- Overlay for modal controls -->
+	<div id="modal-overlay">
+		<div id="modal-overlay-background"></div>
+		<div id="modal-overlay-blocking"></div>
+
+		<div id="modal-customization-drink">
+			<div class="modal-title">
+				<div class="vertical-align-text">Customize
+					<span id="modal-customization-drink-name"></span>
+				</div>
+			</div>
+
+			<div value="customization" class="subitem-button shade-bottom shade-right" id="customization-syrup">
+				<div class="subitem-button-title">Add Syrup</div>
+			</div>
+			<div value="customization" class="subitem-button shade-bottom shade-right" id="customization-esp">
+				<div class="subitem-button-title">Add Espresso</div>
+			</div>
+			<div value="customization" class="subitem-button shade-bottom shade-right" id="customization-soy">
+				<div class="subitem-button-title">Sub Soy Milk</div>
+			</div>
+			<div value="customization" class="subitem-button shade-bottom shade-right" id="customization-tea-bag">
+				<div class="subitem-button-title">Add Tea Bag</div>
+			</div>
+			<div value="deleteItem" class="subitem-button shade-bottom shade-right" id="drink-delete">
+				<div class="subitem-button-title">Delete</div>
+			</div>
+		</div>
+
+		<div id="modal-delete-customization">
+			<div class="modal-title">
+				<div class="vertical-align-text">Delete
+					<span id="modal-delete-customization-name"></span>
+				</div>
+			</div>
+
+			<div value="deleteCustomization" class="subitem-button shade-bottom shade-right" id="customization-delete">
+				<div class="subitem-button-title">Delete</div>
+			</div>
+		</div>
+
+		<div id="modal-drink-esp">
+			<div class="modal-title">
+				<div class="vertical-align-text">Espresso Beverages</div>
+			</div>
+
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-solo-esp">
+				<div class="subitem-button-title">Solo</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-doppio-esp">
+				<div class="subitem-button-title">Doppio</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-con-panna-esp">
+				<div class="subitem-button-title">Con Panna</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-macchiato-esp">
+				<div class="subitem-button-title">Macchiato</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-double-shot-esp">
+				<div class="subitem-button-title">Starbucks Double Shot</div>
+			</div>
+		</div>
+		<div id="modal-drink">
+			<div class="modal-title">
+				<div class="vertical-align-text">
+					<span class="js-modal-drink-size">Grande</span>
+					Beverages</div>
+			</div>
+
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-brewed-coffee">
+				<div class="subitem-button-title">Brewed Coffee</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-brewed-tea">
+				<div class="subitem-button-title">Brewed Tea</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-capp">
+				<div class="subitem-button-title">Cappuccino</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-macc">
+				<div class="subitem-button-title">Caramel Macchiato</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-latte">
+				<div class="subitem-button-title">Caffè Latte</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-mocha">
+				<div class="subitem-button-title">Caffè Mocha</div>
+			</div>
+
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-americano">
+				<div class="subitem-button-title">Caffè Americano</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-tea-latte">
+				<div class="subitem-button-title">Tea Latte</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-capp-flav">
+				<div class="subitem-button-title">Flavored Cappuccino</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-macc-flav">
+				<div class="subitem-button-title">Flavored Macchiato</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-latte-flav">
+				<div class="subitem-button-title">Flavored Latte</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-mocha-flav">
+				<div class="subitem-button-title">Flavored Mocha</div>
+			</div>
+
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-frap">
+				<div class="subitem-button-title">Frappuccino</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-iced-tea">
+				<div class="subitem-button-title">Shaken Iced Tea</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-refresher">
+				<div class="subitem-button-title">Starbucks Refresher</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-frap-esp">
+				<div class="subitem-button-title">Espresso Frappuccino</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-iced-tea-lemonade">
+				<div class="subitem-button-title">Shaken Iced Tea Lemonade</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-smoothie">
+				<div class="subitem-button-title">Starbucks Smoothie</div>
+			</div>
+
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-apple-juice">
+				<div class="subitem-button-title">Apple Juice</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-choc">
+				<div class="subitem-button-title">Hot Chocolate</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-eggnog">
+				<div class="subitem-button-title">Eggnog Latte</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-choc-flav">
+				<div class="subitem-button-title">Flavored Hot Chocolate</div>
+			</div>
+		</div>
+		<div id="modal-drink-trenta">
+			<div class="modal-title">
+				<div class="vertical-align-text">Trenta Beverages</div>
+			</div>
+
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-frap-trenta">
+				<div class="subitem-button-title">Frappuccino</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-frap-esp-trenta">
+				<div class="subitem-button-title">Espresso Frappuccino</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-iced-tea-trenta">
+				<div class="subitem-button-title">Shaken Iced Tea</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-iced-tea-lemonade-trenta">
+				<div class="subitem-button-title">Shaken Iced Tea Lemonade</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-iced-coffee-trenta">
+				<div class="subitem-button-title">Iced Coffee</div>
+			</div>
+			<div value="drink" class="subitem-button shade-bottom shade-right" id="subitem-refresher-trenta">
+				<div class="subitem-button-title">Starbucks Refresher</div>
+			</div>
+		</div>
+
+		<div id="modal-custom-price">
+			<div class="modal-title">
+				<div class="vertical-align-text">Custom Item</div>
+			</div>
+
+			<div class="shade-bottom" id="item-prompt-custom-cash">
+				<div class="vertical-align-text">Price: $<span id="item-prompt-custom-cash-amount"></span></div>
+			</div>
+
+			<div class="shade-bottom shade-right numpad-button js-custom-price-numpad-button" id="custom-price-button-1">1</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-price-numpad-button" id="custom-price-button-2">2</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-price-numpad-button" id="custom-price-button-3">3</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-price-numpad-button" id="custom-price-button-4">4</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-price-numpad-button" id="custom-price-button-5">5</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-price-numpad-button" id="custom-price-button-6">6</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-price-numpad-button" id="custom-price-button-7">7</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-price-numpad-button" id="custom-price-button-8">8</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-price-numpad-button" id="custom-price-button-9">9</div>
+			<div class="shade-bottom shade-right numpad-button" id="custom-price-button-backspace">←</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-price-numpad-button" id="custom-price-button-0">0</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-price-numpad-button" id="custom-price-button-00">00</div>
+			<div value="customPrice" class="shade-bottom shade-right subitem-button" id="item-custom-done-button">
+				<div class="vertical-align-text">Done</div>
+			</div>
+		</div>
+
+		<div id="modal-starbucks-card">
+			<div class="modal-title">
+				<div class="vertical-align-text">Starbucks Card</div>
+			</div>
+			<div value="noswipe" class="shade-bottom" id="starbucks-card-prompt">
+				<div class="vertical-align-text">Swipe card on the reader</div>
+			</div>
+			<div class="payment-button shade-bottom shade-right" id="starbucks-card-activate-button">
+				<div class="vertical-align-text">Activate</div>
+			</div>
+			<div class="payment-button shade-bottom shade-right" id="starbucks-card-reload-button">
+				<div class="vertical-align-text">Reload</div>
+			</div>
+			<div class="payment-button shade-bottom shade-right" id="starbucks-card-deactivate-button">
+				<div class="vertical-align-text">Deactivate</div>
+			</div>
+		</div>
+		<div id="modal-starbucks-card-reload">
+			<div class="modal-title">
+				<div class="vertical-align-text">Starbucks Card Reload</div>
+			</div>
+			<div value="cardReload" reload-amount="10" class="subitem-button shade-bottom shade-right" id="starbucks-card-reload-10-button">
+				<div class="vertical-align-text">$10.00</div>
+			</div>
+			<div value="cardReload" reload-amount="15" class="subitem-button shade-bottom shade-right" id="starbucks-card-reload-15-button">
+				<div class="vertical-align-text">$15.00</div>
+			</div>
+			<div value="cardReload" reload-amount="20" class="subitem-button shade-bottom shade-right" id="starbucks-card-reload-20-button">
+				<div class="vertical-align-text">$20.00</div>
+			</div><div value="cardReload" reload-amount="25" class="subitem-button shade-bottom shade-right" id="starbucks-card-reload-25-button">
+				<div class="vertical-align-text">$25.00</div>
+			</div>
+			<div value="cardReload" reload-amount="30" class="subitem-button shade-bottom shade-right" id="starbucks-card-reload-30-button">
+				<div class="vertical-align-text">$30.00</div>
+			</div>
+			<div value="cardReload" reload-amount="40" class="subitem-button shade-bottom shade-right" id="starbucks-card-reload-40-button">
+				<div class="vertical-align-text">$40.00</div>
+			</div>
+			<div value="cardReload" reload-amount="50" class="subitem-button shade-bottom shade-right" id="starbucks-card-reload-50-button">
+				<div class="vertical-align-text">$50.00</div>
+			</div>
+			<div value="cardReload" reload-amount="100" class="subitem-button shade-bottom shade-right" id="starbucks-card-reload-100-button">
+				<div class="vertical-align-text">$100.00</div>
+			</div>
+			<div class="shade-bottom shade-right" id="starbucks-card-reload-back-button">
+				<div class="vertical-align-text">Back</div>
+			</div>
+		</div>
+
+		<div id="modal-payment-selection">
+			<div class="modal-title">
+				<div class="vertical-align-text">Charge
+					<span class="modal-payment-amount"></span>
+				</div>
+			</div>
+
+			<div class="payment-button shade-bottom shade-right" id="payment-ndid-gift">
+				<div class="payment-button-title">ND ID / Gift Card (Exempt –<span id="payment-tax-exempt-amount"></span>)</div>
+			</div>
+			<div class="payment-button shade-bottom shade-right" id="payment-credit-debit">
+				<div class="payment-button-title">Credit / Debit</div>
+			</div>
+			<div class="payment-button shade-bottom shade-right" id="payment-starbucks-card">
+				<div class="payment-button-title">Starbucks Card</div>
+			</div>
+			<div class="payment-button shade-bottom shade-right" id="payment-applepay">
+				<div class="payment-button-title">Pay</div>
+			</div>
+			<div class="payment-button shade-bottom shade-right" id="payment-cash-1">
+				<div class="payment-button-title"><span id="payment-cash-1-amount"></span> Cash</div>
+			</div>
+			<div class="payment-button shade-bottom shade-right" id="payment-cash-2">
+				<div class="payment-button-title"><span id="payment-cash-2-amount"></span> Cash</div>
+			</div>
+			<div class="payment-button shade-bottom shade-right" id="payment-custom-cash">
+				<div class="payment-button-title">Custom Cash</div>
+			</div>
+			<!-- <div class="payment-button shade-bottom shade-right" id="payment-other">
+				<div class="payment-button-title">Other Payment</div>
+			</div> -->
+		</div>
+
+		<div id="modal-payment-wait">
+			<div class="modal-title">
+				<div class="vertical-align-text">Charge
+					<span class="modal-payment-amount"></span>
+					through
+					<span id="modal-payment-wait-method"></span>
+				</div>
+			</div>
+
+			<div class="shade-bottom" id="payment-prompt">
+				<div class="payment-button-title">Swipe card on the reader...</div>
+			</div>
+
+			<div class="payment-button shade-bottom shade-right" id="payment-wait-back-button">
+				<div class="payment-button-title">Back</div>
+			</div>
+			<div class="payment-button shade-bottom shade-right" id="payment-wait-done-button">
+				<div class="payment-button-title">Done</div>
+			</div>
+		</div>
+
+		<div id="modal-payment-custom-cash">
+			<div class="modal-title">
+				<div class="vertical-align-text">Charge
+					<span class="modal-payment-amount"></span>
+					through cash
+				</div>
+			</div>
+
+			<div class="shade-bottom" id="payment-prompt-custom-cash">
+				<div class="payment-button-title">Cash amount: $<span id="payment-prompt-custom-cash-amount"></span>
+				<br />
+				Change amount: $<span id="payment-prompt-custom-change-amount"></span>
+				</div>
+			</div>
+
+			<div class="shade-bottom shade-right numpad-button js-custom-cash-numpad-button" id="custom-cash-button-1">1</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-cash-numpad-button" id="custom-cash-button-2">2</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-cash-numpad-button" id="custom-cash-button-3">3</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-cash-numpad-button" id="custom-cash-button-4">4</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-cash-numpad-button" id="custom-cash-button-5">5</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-cash-numpad-button" id="custom-cash-button-6">6</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-cash-numpad-button" id="custom-cash-button-7">7</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-cash-numpad-button" id="custom-cash-button-8">8</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-cash-numpad-button" id="custom-cash-button-9">9</div>
+			<div class="shade-bottom shade-right numpad-button" id="custom-cash-button-backspace">←</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-cash-numpad-button" id="custom-cash-button-0">0</div>
+			<div class="shade-bottom shade-right numpad-button js-custom-cash-numpad-button" id="custom-cash-button-00">00</div>
+
+			<div class="payment-button shade-bottom shade-right" id="payment-custom-back-button">
+				<div class="payment-button-title">Back</div>
+			</div>
+			<div class="payment-button shade-bottom shade-right" id="payment-custom-done-button">
+				<div class="payment-button-title">Done</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="app-container">
+		<!-- Order bar containing current order, clear button, and checkout button -->
+		<div class="shade-right" id="order-bar">
+			<!-- Inactive state: gray -->
+			<!-- Active state: red -->
+			<div class="bar-button shade-bottom js-clear-button-inactive" id="clear-button">Clear Order</div>
+
+			<div id="order-list">
+				<div class="js-no-item-prompt vertical-align-text" id="no-item-prompt">No Item Selected</div>
+				<div class="js-item-cell shade-bottom">
+					<div class="js-item-name">Grande Tea Latte</div>
+					<div class="js-item-price">$1.00</div>
+				</div>
+				<div class="js-customization-cell shade-bottom">
+					<div class="js-item-name vertical-align-text">Sub Soy</div>
+					<div class="js-item-price vertical-align-text">$0.60</div>
+				</div>
+			</div>
+
+			<div class="bar-button full-justify shade-bottom" id="tax-display">Tax <span id="js-tax-dollar-amount-display">$0.00</span></div>
+			<div class="bar-button shade-bottom js-charge-button-inactive" id="charge-button">
+			<!-- Inactive state: charge-prompt = "Choose an Item" -->
+			<!-- Active state: charge-prompt = "Charge",
+				charge-dollar-amount-display = "$4.32" -->
+				<span id="js-charge-prompt">Choose an Item</span>
+				<span id="js-charge-dollar-amount-display"></span>
+			</div>
+		</div>
+
+		<!-- Main area containing iten selection, gift card button, and promo code button -->
+		<div id="main-selection">
+
+			<div class="item-button shade-bottom shade-right" id="espresso-button">
+				<img class="js-2x-img" src="img/btn-espresso.png" />
+				<div class="item-button-label">Espresso</div>
+			</div>
+			<div class="item-button shade-bottom shade-right" id="short-button">
+				<img class="js-2x-img" src="img/btn-short.png" />
+				<div class="item-button-label">Short</div>
+			</div>
+			<div class="item-button shade-bottom shade-right" id="tall-button">
+				<img class="js-2x-img" src="img/btn-tall.png" />
+				<div class="item-button-label">Tall</div>
+			</div>
+			<div class="item-button shade-bottom shade-right" id="grande-button">
+				<img class="js-2x-img" src="img/btn-grande.png" />
+				<div class="item-button-label">Grande</div>
+			</div>
+			<div class="item-button shade-bottom shade-right" id="venti-button">
+				<img class="js-2x-img" src="img/btn-venti.png" />
+				<div class="item-button-label">Venti</div>
+			</div>
+			<div class="item-button shade-bottom shade-right" id="trenta-button">
+				<img class="js-2x-img" src="img/btn-trenta.png" />
+				<div class="item-button-label">Trenta</div>
+			</div>
+			<div class="item-button shade-bottom shade-right" id="bottled-button">
+				<img class="js-2x-img" src="img/btn-bottled.png" />
+				<div class="item-button-label">Bottled</div>
+			</div>
+
+			<div class="item-button shade-bottom shade-right" id="mug-button">
+				<img class="js-2x-img" src="img/btn-mug.png" />
+				<div class="item-button-label">Coffee Mugs</div>
+			</div>
+			<div class="item-button shade-bottom shade-right" id="food-button">
+				<img class="js-2x-img" src="img/btn-food.png" />
+				<div class="item-button-label">Food &amp; Pastry</div>
+			</div>
+			<div class="item-button shade-bottom shade-right" id="snack-button">
+				<img class="js-2x-img" src="img/btn-snack.png" />
+				<div class="item-button-label">Snacks</div>
+			</div>
+			<div class="item-button shade-bottom shade-right" id="whole-bean-button">
+				<img class="js-2x-img" src="img/btn-whole-bean.png" />
+				<div class="item-button-label">Whole Bean</div>
+			</div>
+			<div class="item-button shade-bottom shade-right" id="custom-button">
+				<img class="js-2x-img" src="img/btn-custom.png" />
+				<div class="item-button-label">Custom</div>
+			</div>
+
+			<div class="special-button shade-bottom shade-right" id="starbucks-card-button">
+				<div class="vertical-align-text">Starbucks Card</div>
+			</div>
+			<div class="special-button shade-bottom shade-right" id="promo-code-button">
+				<div class="vertical-align-text">Apply Promo Code</div>
+			</div>
+		</div>
+
+		<!-- Control bar containing datetime, random control buttons, and logout button -->
+		<div class="shade-left" id="control-bar">
+			<div id="info-box">
+				<span class="js-date">October 8</span><br /><span class="js-time">9:41 AM</span><br /><br />Good <span class="js-time-desc">morning</span>,<br />
+				<span class="js-preferred-name">John Appleseed</span>!
+			</div>
+			<div class="bar-button shade-bottom" id="bulk-button">Bulk Order</div>
+			<div class="bar-button shade-bottom" id="drawer-button">Open Cash Drawer</div>
+			<div class="bar-button shade-bottom" id="reprint-button">Reprint Receipt</div>
+			<div class="bar-button shade-bottom" id="manager-button">Manager Control</div>
+			<div class="bar-button shade-bottom" id="signout-button">Sign Out</div>
+		</div>
+	</div>
+</body>
+</html>

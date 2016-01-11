@@ -1,0 +1,720 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  letter-spacing: 0.5px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.bar-button {
+  display: block;
+  width: 100%;
+  height: 64px;
+  padding: 10px;
+  position: absolute;
+  line-height: 44px;
+  text-align: center;
+  background-color: #f7fbff; }
+
+.full-justify {
+  text-align: justify; }
+
+.full-justify:after {
+  content: "";
+  display: inline-block;
+  width: 100%; }
+
+.vertical-align-text {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+#modal-overlay {
+  width: 1024px;
+  max-width: 1024px;
+  height: 768px;
+  z-index: 200;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0; }
+  #modal-overlay #modal-overlay-background {
+    width: 1024px;
+    max-width: 1024px;
+    height: 768px;
+    z-index: 201;
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(152, 152, 152, 0.3), rgba(25, 25, 25, 0.3));
+    background-blend-mode: normal; }
+  #modal-overlay #modal-overlay-blocking {
+    width: 1024px;
+    max-width: 1024px;
+    height: 768px;
+    z-index: 201;
+    position: absolute; }
+  #modal-overlay .modal-title {
+    height: 64px;
+    margin: 0 32px; }
+  #modal-overlay #modal-drink {
+    width: 736px;
+    height: 480px;
+    z-index: 210;
+    background: url(../img/bg-pattern.png) 0 0 repeat, linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)), url(../img/bg-blurred.png) -224px -32px no-repeat;
+    background-blend-mode: multiply, normal, normal;
+    position: absolute;
+    left: 224px;
+    top: 32px; }
+    #modal-overlay #modal-drink #subitem-brewed-coffee {
+      top: 64px;
+      left: 32px; }
+    #modal-overlay #modal-drink #subitem-brewed-tea {
+      top: 128px;
+      left: 32px; }
+    #modal-overlay #modal-drink #subitem-capp {
+      top: 192px;
+      left: 32px; }
+    #modal-overlay #modal-drink #subitem-macc {
+      top: 256px;
+      left: 32px; }
+    #modal-overlay #modal-drink #subitem-latte {
+      top: 320px;
+      left: 32px; }
+    #modal-overlay #modal-drink #subitem-mocha {
+      top: 384px;
+      left: 32px; }
+    #modal-overlay #modal-drink #subitem-americano {
+      top: 64px;
+      left: 192px; }
+    #modal-overlay #modal-drink #subitem-tea-latte {
+      top: 128px;
+      left: 192px; }
+    #modal-overlay #modal-drink #subitem-capp-flav {
+      top: 192px;
+      left: 192px; }
+    #modal-overlay #modal-drink #subitem-macc-flav {
+      top: 256px;
+      left: 192px; }
+    #modal-overlay #modal-drink #subitem-latte-flav {
+      top: 320px;
+      left: 192px; }
+    #modal-overlay #modal-drink #subitem-mocha-flav {
+      top: 384px;
+      left: 192px; }
+    #modal-overlay #modal-drink #subitem-frap {
+      top: 64px;
+      left: 384px; }
+    #modal-overlay #modal-drink #subitem-iced-tea {
+      top: 128px;
+      left: 384px; }
+    #modal-overlay #modal-drink #subitem-refresher {
+      top: 192px;
+      left: 384px; }
+    #modal-overlay #modal-drink #subitem-frap-esp {
+      top: 64px;
+      left: 544px; }
+    #modal-overlay #modal-drink #subitem-iced-tea-lemonade {
+      top: 128px;
+      left: 544px; }
+    #modal-overlay #modal-drink #subitem-smoothie {
+      top: 192px;
+      left: 544px; }
+    #modal-overlay #modal-drink #subitem-apple-juice {
+      top: 288px;
+      left: 384px; }
+    #modal-overlay #modal-drink #subitem-choc {
+      top: 352px;
+      left: 384px; }
+    #modal-overlay #modal-drink #subitem-eggnog {
+      top: 288px;
+      left: 544px; }
+    #modal-overlay #modal-drink #subitem-choc-flav {
+      top: 352px;
+      left: 544px; }
+  #modal-overlay #modal-drink-esp {
+    width: 384px;
+    height: 288px;
+    z-index: 210;
+    background: url(../img/bg-pattern.png) 0 0 repeat, linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)), url(../img/bg-blurred.png) -224px -32px no-repeat;
+    background-blend-mode: multiply, normal, normal;
+    position: absolute;
+    left: 224px;
+    top: 32px; }
+    #modal-overlay #modal-drink-esp #subitem-solo-esp {
+      top: 64px;
+      left: 32px; }
+    #modal-overlay #modal-drink-esp #subitem-doppio-esp {
+      top: 64px;
+      left: 192px; }
+    #modal-overlay #modal-drink-esp #subitem-con-panna-esp {
+      top: 128px;
+      left: 32px; }
+    #modal-overlay #modal-drink-esp #subitem-macchiato-esp {
+      top: 128px;
+      left: 192px; }
+    #modal-overlay #modal-drink-esp #subitem-double-shot-esp {
+      top: 192px;
+      left: 32px; }
+  #modal-overlay #modal-drink-trenta {
+    width: 384px;
+    height: 288px;
+    z-index: 210;
+    background: url(../img/bg-pattern.png) 0 0 repeat, linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)), url(../img/bg-blurred.png) -352px -320px no-repeat;
+    background-blend-mode: multiply, normal, normal;
+    position: absolute;
+    left: 352px;
+    top: 320px; }
+    #modal-overlay #modal-drink-trenta #subitem-frap-trenta {
+      top: 64px;
+      left: 32px; }
+    #modal-overlay #modal-drink-trenta #subitem-frap-esp-trenta {
+      top: 64px;
+      left: 192px; }
+    #modal-overlay #modal-drink-trenta #subitem-iced-tea-trenta {
+      top: 128px;
+      left: 32px; }
+    #modal-overlay #modal-drink-trenta #subitem-iced-tea-lemonade-trenta {
+      top: 128px;
+      left: 192px; }
+    #modal-overlay #modal-drink-trenta #subitem-iced-coffee-trenta {
+      top: 192px;
+      left: 32px; }
+    #modal-overlay #modal-drink-trenta #subitem-refresher-trenta {
+      top: 192px;
+      left: 192px; }
+  #modal-overlay #modal-custom-price {
+    width: 384px;
+    height: 512px;
+    z-index: 210;
+    background: url(../img/bg-pattern.png) 0 0 repeat, linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)), url(../img/bg-blurred.png) -512px -256px no-repeat;
+    background-blend-mode: multiply, normal, normal;
+    position: absolute;
+    left: 512px;
+    bottom: 0; }
+    #modal-overlay #modal-custom-price #item-prompt-custom-cash {
+      position: absolute;
+      width: 320px;
+      height: 64px;
+      padding: 10px;
+      background-color: #f7fbff;
+      top: 64px;
+      left: 32px; }
+    #modal-overlay #modal-custom-price .numpad-button {
+      position: absolute;
+      width: 106.66667px;
+      height: 64px;
+      padding: 10px;
+      background-color: #f9faf7; }
+    #modal-overlay #modal-custom-price #custom-price-button-1 {
+      top: 128px;
+      left: 32px; }
+    #modal-overlay #modal-custom-price #custom-price-button-2 {
+      top: 128px;
+      left: 138.66667px; }
+    #modal-overlay #modal-custom-price #custom-price-button-3 {
+      top: 128px;
+      left: 245.33333px; }
+    #modal-overlay #modal-custom-price #custom-price-button-4 {
+      top: 192px;
+      left: 32px; }
+    #modal-overlay #modal-custom-price #custom-price-button-5 {
+      top: 192px;
+      left: 138.66667px; }
+    #modal-overlay #modal-custom-price #custom-price-button-6 {
+      top: 192px;
+      left: 245.33333px; }
+    #modal-overlay #modal-custom-price #custom-price-button-7 {
+      top: 256px;
+      left: 32px; }
+    #modal-overlay #modal-custom-price #custom-price-button-8 {
+      top: 256px;
+      left: 138.66667px; }
+    #modal-overlay #modal-custom-price #custom-price-button-9 {
+      top: 256px;
+      left: 245.33333px; }
+    #modal-overlay #modal-custom-price #custom-price-button-backspace {
+      top: 320px;
+      left: 32px; }
+    #modal-overlay #modal-custom-price #custom-price-button-0 {
+      top: 320px;
+      left: 138.66667px; }
+    #modal-overlay #modal-custom-price #custom-price-button-00 {
+      top: 320px;
+      left: 245.33333px; }
+    #modal-overlay #modal-custom-price #item-custom-done-button {
+      bottom: 32px;
+      left: 192px; }
+  #modal-overlay #modal-starbucks-card {
+    width: 544px;
+    height: 320px;
+    z-index: 210;
+    background: url(../img/bg-pattern.png) 0 0 repeat, linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)), url(../img/bg-blurred.png) -480px -448px no-repeat;
+    background-blend-mode: multiply, normal, normal;
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+    #modal-overlay #modal-starbucks-card #starbucks-card-prompt {
+      position: absolute;
+      width: 288px;
+      height: 224px;
+      padding: 10px;
+      background-color: #f7fbff;
+      top: 64px;
+      right: 32px; }
+    #modal-overlay #modal-starbucks-card #starbucks-card-activate-button {
+      top: 64px;
+      left: 32px; }
+    #modal-overlay #modal-starbucks-card #starbucks-card-reload-button {
+      top: 128px;
+      left: 32px; }
+    #modal-overlay #modal-starbucks-card #starbucks-card-deactivate-button {
+      top: 224px;
+      left: 32px;
+      color: #d8534f; }
+  #modal-overlay #modal-starbucks-card-reload {
+    width: 544px;
+    height: 320px;
+    z-index: 210;
+    background: url(../img/bg-pattern.png) 0 0 repeat, linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)), url(../img/bg-blurred.png) -480px -448px no-repeat;
+    background-blend-mode: multiply, normal, normal;
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+    #modal-overlay #modal-starbucks-card-reload .subitem-button {
+      width: 120px; }
+    #modal-overlay #modal-starbucks-card-reload #starbucks-card-prompt {
+      position: absolute;
+      width: 288px;
+      height: 224px;
+      padding: 10px;
+      background-color: #f7fbff;
+      top: 64px;
+      right: 32px; }
+    #modal-overlay #modal-starbucks-card-reload #starbucks-card-reload-10-button {
+      top: 64px;
+      left: 32px; }
+    #modal-overlay #modal-starbucks-card-reload #starbucks-card-reload-15-button {
+      top: 64px;
+      left: 152px; }
+    #modal-overlay #modal-starbucks-card-reload #starbucks-card-reload-20-button {
+      top: 64px;
+      left: 272px; }
+    #modal-overlay #modal-starbucks-card-reload #starbucks-card-reload-25-button {
+      top: 64px;
+      left: 392px; }
+    #modal-overlay #modal-starbucks-card-reload #starbucks-card-reload-30-button {
+      top: 128px;
+      left: 32px; }
+    #modal-overlay #modal-starbucks-card-reload #starbucks-card-reload-40-button {
+      top: 128px;
+      left: 152px; }
+    #modal-overlay #modal-starbucks-card-reload #starbucks-card-reload-50-button {
+      top: 128px;
+      left: 272px; }
+    #modal-overlay #modal-starbucks-card-reload #starbucks-card-reload-100-button {
+      top: 128px;
+      left: 392px; }
+    #modal-overlay #modal-starbucks-card-reload #starbucks-card-reload-back-button {
+      top: 224px;
+      left: 32px;
+      position: absolute;
+      width: 160px;
+      height: 64px;
+      padding: 10px;
+      background-color: #f9faf7; }
+  #modal-overlay #modal-customization-drink {
+    width: 384px;
+    height: 320px;
+    z-index: 210;
+    background: url(../img/bg-pattern.png) 0 0 repeat, linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)), url(../img/bg-blurred.png) -352px -320px no-repeat;
+    background-blend-mode: multiply, normal, normal;
+    position: absolute;
+    left: 352px;
+    top: 320px; }
+    #modal-overlay #modal-customization-drink #customization-syrup {
+      top: 64px;
+      left: 32px; }
+    #modal-overlay #modal-customization-drink #customization-esp {
+      top: 64px;
+      left: 192px; }
+    #modal-overlay #modal-customization-drink #customization-soy {
+      top: 128px;
+      left: 32px; }
+    #modal-overlay #modal-customization-drink #customization-tea-bag {
+      top: 128px;
+      left: 192px; }
+    #modal-overlay #modal-customization-drink #drink-delete {
+      top: 224px;
+      left: 32px;
+      color: #d8534f; }
+  #modal-overlay #modal-delete-customization {
+    width: 224px;
+    height: 160px;
+    z-index: 210;
+    background: url(../img/bg-pattern.png) 0 0 repeat, linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)), url(../img/bg-blurred.png) -352px -320px no-repeat;
+    background-blend-mode: multiply, normal, normal;
+    position: absolute;
+    left: 352px;
+    top: 320px; }
+    #modal-overlay #modal-delete-customization #customization-delete {
+      top: 64px;
+      left: 32px;
+      color: #d8534f; }
+  #modal-overlay #modal-payment-selection {
+    width: 384px;
+    height: 352px;
+    z-index: 210;
+    background: url(../img/bg-pattern.png) 0 0 repeat, linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)), url(../img/bg-blurred.png) 0 -416px no-repeat;
+    background-blend-mode: multiply, normal, normal;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+    #modal-overlay #modal-payment-selection #payment-ndid-gift {
+      top: 64px;
+      left: 32px; }
+    #modal-overlay #modal-payment-selection #payment-credit-debit {
+      top: 128px;
+      left: 32px; }
+    #modal-overlay #modal-payment-selection #payment-starbucks-card {
+      top: 192px;
+      left: 32px; }
+    #modal-overlay #modal-payment-selection #payment-applepay {
+      top: 256px;
+      left: 32px; }
+    #modal-overlay #modal-payment-selection #payment-cash-1 {
+      top: 64px;
+      left: 192px; }
+    #modal-overlay #modal-payment-selection #payment-cash-2 {
+      top: 128px;
+      left: 192px; }
+    #modal-overlay #modal-payment-selection #payment-custom-cash {
+      top: 192px;
+      left: 192px; }
+    #modal-overlay #modal-payment-selection #payment-other {
+      top: 256px;
+      left: 192px; }
+  #modal-overlay #modal-payment-wait {
+    width: 384px;
+    height: 352px;
+    z-index: 210;
+    background: url(../img/bg-pattern.png) 0 0 repeat, linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)), url(../img/bg-blurred.png) 0 -416px no-repeat;
+    background-blend-mode: multiply, normal, normal;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+    #modal-overlay #modal-payment-wait #payment-prompt {
+      position: absolute;
+      width: 320px;
+      height: 160px;
+      padding: 10px;
+      background-color: #f7fbff;
+      top: 64px;
+      left: 32px; }
+    #modal-overlay #modal-payment-wait #payment-wait-back-button {
+      top: 256px;
+      left: 32px; }
+    #modal-overlay #modal-payment-wait #payment-wait-done-button {
+      top: 256px;
+      left: 192px; }
+  #modal-overlay #modal-payment-custom-cash {
+    width: 384px;
+    height: 544px;
+    z-index: 210;
+    background: url(../img/bg-pattern.png) 0 0 repeat, linear-gradient(rgba(247, 251, 255, 0.6), rgba(247, 251, 255, 0.6)), url(../img/bg-blurred.png) 0 -224px no-repeat;
+    background-blend-mode: multiply, normal, normal;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+    #modal-overlay #modal-payment-custom-cash #payment-prompt-custom-cash {
+      position: absolute;
+      width: 320px;
+      height: 64px;
+      padding: 10px;
+      background-color: #f7fbff;
+      top: 64px;
+      left: 32px; }
+    #modal-overlay #modal-payment-custom-cash .numpad-button {
+      position: absolute;
+      width: 106.66667px;
+      height: 64px;
+      padding: 10px;
+      background-color: #f9faf7; }
+    #modal-overlay #modal-payment-custom-cash #custom-cash-button-1 {
+      top: 160px;
+      left: 32px; }
+    #modal-overlay #modal-payment-custom-cash #custom-cash-button-2 {
+      top: 160px;
+      left: 138.66667px; }
+    #modal-overlay #modal-payment-custom-cash #custom-cash-button-3 {
+      top: 160px;
+      left: 245.33333px; }
+    #modal-overlay #modal-payment-custom-cash #custom-cash-button-4 {
+      top: 224px;
+      left: 32px; }
+    #modal-overlay #modal-payment-custom-cash #custom-cash-button-5 {
+      top: 224px;
+      left: 138.66667px; }
+    #modal-overlay #modal-payment-custom-cash #custom-cash-button-6 {
+      top: 224px;
+      left: 245.33333px; }
+    #modal-overlay #modal-payment-custom-cash #custom-cash-button-7 {
+      top: 288px;
+      left: 32px; }
+    #modal-overlay #modal-payment-custom-cash #custom-cash-button-8 {
+      top: 288px;
+      left: 138.66667px; }
+    #modal-overlay #modal-payment-custom-cash #custom-cash-button-9 {
+      top: 288px;
+      left: 245.33333px; }
+    #modal-overlay #modal-payment-custom-cash #custom-cash-button-backspace {
+      top: 352px;
+      left: 32px; }
+    #modal-overlay #modal-payment-custom-cash #custom-cash-button-0 {
+      top: 352px;
+      left: 138.66667px; }
+    #modal-overlay #modal-payment-custom-cash #custom-cash-button-00 {
+      top: 352px;
+      left: 245.33333px; }
+    #modal-overlay #modal-payment-custom-cash #payment-custom-back-button {
+      bottom: 32px;
+      left: 32px; }
+    #modal-overlay #modal-payment-custom-cash #payment-custom-done-button {
+      bottom: 32px;
+      left: 192px; }
+  #modal-overlay .subitem-button {
+    position: absolute;
+    width: 160px;
+    height: 64px;
+    padding: 10px;
+    background-color: #f9faf7; }
+    #modal-overlay .subitem-button .subitem-button-title {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+  #modal-overlay .payment-button {
+    position: absolute;
+    width: 160px;
+    height: 64px;
+    padding: 10px;
+    background-color: #f9faf7; }
+    #modal-overlay .payment-button .payment-button-title {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+
+#app-container {
+  width: 1024px;
+  max-width: 1024px;
+  height: 768px;
+  z-index: 100;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0; }
+
+#order-bar, #main-selection, #control-bar {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  margin-right: -4.5px; }
+
+#order-bar {
+  top: 0px;
+  width: 224px;
+  background-image: url(../img/bg-pattern.png);
+  background-repeat: repeat;
+  background-color: rgba(210, 213, 217, 0.6);
+  background-blend-mode: multiply; }
+  #order-bar #clear-button {
+    height: 32px;
+    line-height: 12px;
+    position: absolute;
+    top: 0;
+    color: white; }
+  #order-bar .js-clear-button-active {
+    background-image: linear-gradient(180deg, #d9706c, #cf6b67);
+    background-blend-mode: normal; }
+  #order-bar .js-clear-button-inactive {
+    background-image: linear-gradient(180deg, #d9d9d9, #cfcfcf);
+    background-blend-mode: normal; }
+  #order-bar #order-list {
+    position: absolute;
+    top: 32px;
+    height: 576px;
+    width: 100%;
+    overflow: scroll; }
+    #order-bar #order-list .js-item-cell {
+      position: relative;
+      width: 223px;
+      height: 64px;
+      background-color: #f7fbff; }
+      #order-bar #order-list .js-item-cell .js-item-name {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        max-width: 207px;
+        float: left; }
+      #order-bar #order-list .js-item-cell .js-item-price {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        float: right; }
+    #order-bar #order-list .js-customization-cell {
+      width: 191px;
+      height: 32px;
+      padding: 0 8px;
+      margin-left: 32px;
+      background-color: #f7fbff; }
+      #order-bar #order-list .js-customization-cell .js-item-name {
+        max-width: 175px;
+        float: left; }
+      #order-bar #order-list .js-customization-cell .js-item-price {
+        float: right; }
+  #order-bar #no-item-prompt {
+    color: #404040;
+    text-align: center; }
+  #order-bar #tax-display {
+    height: 32px;
+    line-height: 12px;
+    position: absolute;
+    bottom: 128px; }
+  #order-bar #charge-button {
+    height: 128px;
+    line-height: 108px;
+    position: absolute;
+    bottom: 0; }
+  #order-bar .js-charge-button-active {
+    color: white;
+    background-image: linear-gradient(180deg, #52bf52, #47a447);
+    background-blend-mode: normal; }
+  #order-bar .js-charge-button-inactive {
+    color: white;
+    background-image: linear-gradient(180deg, #bfbfbf, #9b9b9b);
+    background-blend-mode: normal; }
+
+#main-selection {
+  width: 608px;
+  background-image: url(../img/bg-pattern.png);
+  background-repeat: repeat;
+  background-color: rgba(235, 238, 242, 0.6);
+  background-blend-mode: multiply; }
+  #main-selection .item-button {
+    position: absolute;
+    width: 128px;
+    height: 160px;
+    padding: 10px;
+    background-color: #f7fbff; }
+    #main-selection .item-button img {
+      width: 100%;
+      height: 108px;
+      filter: saturate(60%);
+      -webkit-filter: saturate(60%); }
+    #main-selection .item-button .item-button-label {
+      position: relative;
+      width: 100%;
+      top: 4px;
+      bottom: 0; }
+  #main-selection .special-button {
+    position: absolute;
+    width: 128px;
+    height: 96px;
+    padding: 10px;
+    background-color: #f9faf7; }
+  #main-selection #espresso-button {
+    top: 32px;
+    left: 32px; }
+  #main-selection #short-button {
+    top: 32px;
+    left: 160px; }
+  #main-selection #tall-button {
+    top: 192px;
+    left: 32px; }
+  #main-selection #grande-button {
+    top: 192px;
+    left: 160px; }
+  #main-selection #venti-button {
+    top: 352px;
+    left: 32px; }
+  #main-selection #trenta-button {
+    top: 352px;
+    left: 160px; }
+  #main-selection #bottled-button {
+    top: 544px;
+    left: 32px; }
+  #main-selection #mug-button {
+    top: 32px;
+    left: 320px; }
+  #main-selection #food-button {
+    top: 32px;
+    left: 448px; }
+  #main-selection #snack-button {
+    top: 192px;
+    left: 320px; }
+  #main-selection #whole-bean-button {
+    top: 192px;
+    left: 448px; }
+  #main-selection #custom-button {
+    top: 352px;
+    left: 320px; }
+  #main-selection #starbucks-card-button {
+    bottom: 64px;
+    right: 160px; }
+  #main-selection #promo-code-button {
+    bottom: 64px;
+    right: 32px; }
+
+#control-bar {
+  width: 192px;
+  background-image: url(../img/bg-pattern.png);
+  background-repeat: repeat;
+  background-color: rgba(210, 213, 217, 0.6);
+  background-blend-mode: multiply; }
+  #control-bar #info-box {
+    height: 192px;
+    padding: 24px;
+    color: #404040;
+    position: absolute;
+    top: 0; }
+  #control-bar #bulk-button {
+    bottom: 320px; }
+  #control-bar #drawer-button {
+    bottom: 224px; }
+  #control-bar #reprint-button {
+    bottom: 160px; }
+  #control-bar #manager-button {
+    bottom: 96px; }
+  #control-bar #signout-button {
+    bottom: 0;
+    color: #d8534f; }
+
+.shade-bottom {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(198, 201, 204, 0.8); }
+
+.shade-left {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: rgba(198, 201, 204, 0.8); }
+
+.shade-right {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgba(198, 201, 204, 0.8); }
+
+/*# sourceMappingURL=app.css.map */
